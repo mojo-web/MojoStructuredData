@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Unternehmensdaten (OnlineStore)</title>
+        <title lang="en-GB">Company data (OnlineStore)</title>
+
+        <input-field type="bool">
+            <name>enableOrganization</name>
+            <label>OnlineStore-Daten auf jeder Seite ausgeben</label>
+            <label lang="en-GB">Output OnlineStore data on every page</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>name</name>
+            <label>Name</label>
+            <defaultValue>A&amp;B Bürokommunikation</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>alternateName</name>
+            <label>Alternativer Name</label>
+            <defaultValue>Frankiersysteme.de</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>url</name>
+            <label>URL</label>
+            <helpText>Leer lassen = Domain des Sales Channels wird automatisch verwendet.</helpText>
+            <defaultValue>https://www.frankiersysteme.de/</defaultValue>
+        </input-field>
+
+        <input-field type="textarea">
+            <name>description</name>
+            <label>Beschreibung</label>
+            <defaultValue>A&amp;B Bürokommunikation ist Ihr Spezialist für Postbearbeitungsmaschinen mit Sitz bei Hannover. Wir bieten Frankiermaschinen, Kuvertiermaschinen, Falzmaschinen, elektrische Brieföffner, Aktenvernichter sowie Verbrauchsmaterial und Sicherheitssoftware. Als autorisierter Vertriebs- und Servicepartner von Francotyp-Postalia und Frama betreuen wir Kunden bundesweit.</defaultValue>
+        </input-field>
+    </card>
+
+    <card>
+        <title>Adresse &amp; Kontakt</title>
+        <title lang="en-GB">Address &amp; contact</title>
+
+        <input-field type="text">
+            <name>streetAddress</name>
+            <label>Straße und Hausnummer</label>
+            <defaultValue>Alt-Godshorn 79</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>postalCode</name>
+            <label>Postleitzahl</label>
+            <defaultValue>30855</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>addressLocality</name>
+            <label>Ort</label>
+            <defaultValue>Langenhagen</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>addressRegion</name>
+            <label>Region / Bundesland</label>
+            <defaultValue>Niedersachsen</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>addressCountry</name>
+            <label>Land (ISO-Code)</label>
+            <defaultValue>DE</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>telephone</name>
+            <label>Telefon</label>
+            <defaultValue>+49-511-97329790</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>email</name>
+            <label>E-Mail</label>
+            <defaultValue>info@frankiersysteme.de</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>opens</name>
+            <label>Öffnet (HH:MM)</label>
+            <defaultValue>08:00</defaultValue>
+        </input-field>
+
+        <input-field type="text">
+            <name>closes</name>
+            <label>Schließt (HH:MM)</label>
+            <defaultValue>16:30</defaultValue>
+        </input-field>
+
+        <input-field type="multi-select">
+            <name>openDays</name>
+            <label>Öffnungstage</label>
+            <helpText>Leer lassen = Montag bis Freitag.</helpText>
+            <options>
+                <option><id>Monday</id><name>Montag</name></option>
+                <option><id>Tuesday</id><name>Dienstag</name></option>
+                <option><id>Wednesday</id><name>Mittwoch</name></option>
+                <option><id>Thursday</id><name>Donnerstag</name></option>
+                <option><id>Friday</id><name>Freitag</name></option>
+                <option><id>Saturday</id><name>Samstag</name></option>
+                <option><id>Sunday</id><name>Sonntag</name></option>
+            </options>
+        </input-field>
+    </card>
+
+    <card>
+        <title>Marken, Themen, Zahlung &amp; Profile</title>
+        <title lang="en-GB">Brands, topics, payment &amp; profiles</title>
+
+        <input-field type="textarea">
+            <name>brands</name>
+            <label>Marken (brand)</label>
+            <helpText>Ein Eintrag pro Zeile. Leer lassen = Standardwerte des Plugins.</helpText>
+        </input-field>
+
+        <input-field type="textarea">
+            <name>knowsAbout</name>
+            <label>Themen / Kompetenzen (knowsAbout)</label>
+            <helpText>Ein Eintrag pro Zeile. Leer lassen = Standardwerte des Plugins.</helpText>
+        </input-field>
+
+        <input-field type="textarea">
+            <name>paymentAccepted</name>
+            <label>Akzeptierte Zahlungsarten (paymentAccepted)</label>
+            <helpText>Ein Eintrag pro Zeile. Leer lassen = Standardwerte des Plugins.</helpText>
+        </input-field>
+
+        <input-field type="textarea">
+            <name>sameAs</name>
+            <label>Profile / Social Links (sameAs)</label>
+            <helpText>Eine URL pro Zeile. Leer lassen = Standardwerte des Plugins.</helpText>
+        </input-field>
+    </card>
+
+    <card>
+        <title>Seitentypen</title>
+        <title lang="en-GB">Page types</title>
+
+        <input-field type="bool">
+            <name>enableProduct</name>
+            <label>Product-Schema auf Detailseiten</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
+        <input-field type="bool">
+            <name>enableCategory</name>
+            <label>CollectionPage + BreadcrumbList auf Kategorieseiten</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+
+        <input-field type="bool">
+            <name>enableContent</name>
+            <label>WebPage auf Inhalts-/Landingpages</label>
+            <defaultValue>true</defaultValue>
+        </input-field>
+    </card>
+</config>

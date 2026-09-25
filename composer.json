@@ -1,0 +1,31 @@
+{
+    "name": "mojo-web/structured-data",
+    "description": "JSON-LD / Schema.org structured data for the Shopware 6 storefront (OnlineStore, Product, CollectionPage, WebPage) - optimized for AI/LLM and search visibility.",
+    "version": "1.0.1",
+    "type": "shopware-platform-plugin",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "mojo-web.de"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.6.0 || ~6.7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mojo\\StructuredData\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Mojo\\StructuredData\\MojoStructuredData",
+        "label": {
+            "de-DE": "Mojo Structured Data (JSON-LD)",
+            "en-GB": "Mojo Structured Data (JSON-LD)"
+        },
+        "description": {
+            "de-DE": "Rendert JSON-LD/Schema.org auf jeder Storefront-Seite: OnlineStore auf allen Seiten, Product auf Detailseiten, CollectionPage/BreadcrumbList auf Kategorie- und WebPage auf Inhaltsseiten.",
+            "en-GB": "Renders JSON-LD/Schema.org on every storefront page."
+        }
+    }
+}
